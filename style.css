@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.image{
+    position: relative;
+    width:100%;
+    height:93.5vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/concert.jpg);
+}
+
+.image-overlay{
+    
+    width:100%;
+    height:93.5vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav{
+    background-color: rgb(9, 9, 9);
+    height:50px;
+    
+}
+.head{
+    display: flex;
+    align-items: center;
+    color:white;
+    list-style: none;
+    font-family: 'Narnoor', serif;
+    flex-basis:20px;
+    font-weight: bolder;
+}
+
+nav li{
+    padding: 0 10px ;
+}
+
+.bottom{
+    position: sticky;
+    position: absolute;
+    bottom:0;
+    height:130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color:white;
+}
+
+.songs{
+    min-height: 77vh;    /* necessary for bottom:0 to work */
+    color:white;
+    font-family: 'Merriweather',sans-serif;
+    display:flex;
+    justify-content: space-around;
+    margin:0 9vw;
+}
+
+
+#bar{
+    width:80vw;
+    cursor: pointer;
+}
+
+.icons i{
+    margin-top:15px;
+    cursor: pointer;
+}
+
+.icons{
+    margin-left:10vw;
+}
+
+.poster{
+    height:40px; 
+    border-radius: 50%;
+}
+
+.title{
+    font-size: 15px;
+    font-family:'Montserrat',sans-serif;
+}
+
+button{
+    width:30vw;
+}
+.firstList,.secondList{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.display{
+    position:absolute;
+    left:10vw;
+    padding-top:30px;
+}
+.display img{
+    opacity:0;
+    transition:opacity 0.5s ease-in;  /* 1st parameter: the property u want to put transition on.. when its value changes
+                                       2nd : how fast u want the change to happen
+                                       3rd: transition effect with slow start */
+}
+
+.style{
+    color: rgb(253, 160, 160);
+}
+
+.buttonClick{
+    background-color: rgb(145, 38, 38);
+
+}
+
+.special{
+    margin:0 10px;
+}
+
+@media(max-width:770px){
+    .bottom{
+        height:150px;
+    }
+ 
+     .icons{
+        padding-top:37px;
+     }
+    .display{
+        padding-top:0px;
+        line-height: 8px;
+    }
+    #bar{
+        margin-top:20px;
+    }
+    .secondList{
+        display:none;
+    }
+    .firstList button{
+        width:70vw;
+    }
+    .firstList .title{
+        font-size:13px;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RhythMix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Montserrat&family=Narnoor&family=Sacramento&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+   <nav>
+    <ul class="head">
+        <li style="padding-right:0"><img src="./images/logo.jpeg" style="height:50px"></li>
+        <li style="padding-left:0; font-size: 20px; color: rgb(250, 212, 185); padding-bottom: 8px;">RhythMix</li>
+        <li style="padding-bottom: 6px;">Home</li>
+        <li style="padding-bottom: 6px;">About</li>
+    </ul>
+   </nav>
+    
+    <div class="image">
+        <div class="image-overlay">
+            
+            <!--songs-->
+            <div class="songs">
+                 <div class="firstList">
+                    <button class="btn btn-lg btn-light rounded-pill px-3" id="0" type="button" style="text-align: left; background-color: rgb(203, 201, 201);  display:flex; justify-content: space-between; align-items: center;">
+                    <img src="./images/attention.jpg" class="poster"><span class="title special"><strong>Attention</strong> - Charlie Puth</span>
+                    <span class="title">3:28</span></button>             
+
+                    <button class="btn btn-lg btn-light rounded-pill px-3" id="1" type="button" style="text-align: left; background-color: rgb(203, 201, 201); display:flex; justify-content: space-between; align-items: center;">
+                    <img src="./images/dieforyou.jpg" class="poster"><span class="title special"><strong>Die For You</strong> - The Weeknd</span> 
+                    <span class="title">4:20</span></button> 
+
+                    <button class="btn btn-lg btn-light rounded-pill px-3" id="2" type="button" style="text-align: left; background-color: rgb(203, 201, 201); display:flex; justify-content: space-between; align-items: center;">
+                    <img src="./images/godwoman.jpg" class="poster"><span class="title special"><strong>God is a woman</strong> - Ariana Grande</span>
+                    <span class="title">3:17</span></button> 
+
+                    <button class="btn btn-lg btn-light rounded-pill px-3" id="3"  type="button" style="text-align: left; background-color: rgb(203, 201, 201); display:flex; justify-content: space-between; align-items: center;">
+                    <img src="./images/havana.jpeg" class="poster"><span class="title special"><strong>Havana</strong> - Camilo Cabello, Young Thug</span>  
+                    <span class="title">3:37</span></button> 
+
+                    <button class="btn btn-lg btn-light rounded-pill px-3" id="4" type="button" style="text-align: left; background-color: rgb(203, 201, 201); display:flex; justify-content: space-between; align-items: center;">
+                    <img src="./images/latenighttalk.jpeg" class="poster"><span class="title special"><strong>Late Night Talking</strong> - Harry Styles</span> 
+                    <span class="title">3:57</span></button> 
+                </div>
+
+                 <div class="secondList">
+                    <button class="btn btn-lg btn-light rounded-pill px-3" id="5" type="button" style="text-align: left; background-color: rgb(203, 201, 201);  display:flex; justify-content: space-between; align-items: center;">
+                        <img src="./images/onedance.jpg" class="poster"><span class="title special"><strong>One Dance</strong> - Drake, Wizkid, Kyla</span>
+                        <span class="title">3:53</span></button>             
+    
+                        <button class="btn btn-lg btn-light rounded-pill px-3" id="6" type="button" style="text-align: left; background-color: rgb(203, 201, 201); display:flex; justify-content: space-between; align-items: center;">
+                        <img src="./images/senorita.jpg" class="poster"><span class="title special"><strong>Senorita</strong> - Shawn Mendes, Camila Cabello</span> 
+                        <span class="title">3:10</span></button> 
+    
+                        <button class="btn btn-lg btn-light rounded-pill px-3" id="7" type="button" style="text-align: left; background-color: rgb(203, 201, 201); display:flex; justify-content: space-between; align-items: center;">
+                        <img src="./images/whenyougone.jpg" class="poster"><span class="title special"><strong>When You're Gone</strong> - Shawn Mendes</span>
+                        <span class="title">2:52</span></button> 
+    
+                        <button class="btn btn-lg btn-light rounded-pill px-3" id="8" type="button" style="text-align: left; background-color: rgb(203, 201, 201); display:flex; justify-content: space-between; align-items: center;">
+                        <img src="./images/needtoknow.jpeg" class="poster"><span class="title special"><strong>Need to Know</strong> - Doja Cat</span>  
+                        <span class="title">3:30</span></button> 
+    
+                        <button class="btn btn-lg btn-light rounded-pill px-3" id="9" type="button" style="text-align: left; background-color: rgb(203, 201, 201); display:flex; justify-content: space-between; align-items: center;">
+                        <img src="./images/souvenir.jpg" class="poster"><span class="title special"><strong>Souvenir</strong> - Selena Gomez</span> 
+                        <span class="title">2:41</span></button>  
+                 </div>
+            </div>
+
+            <!--Bottom bar-->
+            <div class="bottom">
+                <input type="range" name="range" id="bar" min="0" max="100" value="0" style="margin-left:10vw; accent-color: rgb(234, 82, 82);">
+                <div class="icons">
+                    <i class="fa-solid fa-2x fa-backward-step" id="prev" style="color: #fcfcfc;"></i>
+                    <i class="fa-regular fa-2x fa-circle-play" id="masterplay" style="color: #fcfcfc; padding:0 10px;"></i>
+                    <i class="fa-solid fa-2x fa-forward-step" id="next" style="color: #fcfcfc;"></i>   <!--use fa-2x class to make them bigger-->
+                 </div>
+                 <div class="display">
+                    <img src="./images/wave.gif" style="width:45px;" id="gif"><span style="padding-left:10px;" id="songName">Attention - Charlie Puth</span>
+                 </div>
+            </div>
+    </div>
+    </div>
+
+
+ <script src="https://kit.fontawesome.com/bab169cf62.js" crossorigin="anonymous"></script> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <script src="./index.js" charset="utf-8" ></script>
+</body>
+</html>
